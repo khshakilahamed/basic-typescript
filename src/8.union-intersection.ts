@@ -8,6 +8,7 @@ type NoobDeveloper = {
 //     experience: number;
 // }
 
+// -------- Intersection ----------
 type JuniorDeveloper = NoobDeveloper & {
     expertise: string;
     experience: number;
@@ -26,6 +27,7 @@ type NextLevelDeveloper = JuniorDeveloper & {
     // level: Level;
 }
 
+// ------------- Union -------------
 const newDeveloper: NoobDeveloper | JuniorDeveloper = {
     name: 'Kh. Shakil',
     expertise: 'Javascript',
